@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Clean.Architecture.Application\Clean.Architecture.Application.csproj" />
+    <ProjectReference Include="..\Clean.Architecture.Infastructure.Data\Clean.Architecture.Infastructure.Data.csproj" />
+  </ItemGroup>
+
 </Project>

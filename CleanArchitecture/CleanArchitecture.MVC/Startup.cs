@@ -1,4 +1,5 @@
 using Clean.Architecture.Infastructure.Data.Context;
+using Clean.Architecture.Infastructure.IoC;
 using CleanArchitecture.MVC.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,6 +44,8 @@ namespace CleanArchitecture.MVC
             });
 
             services.AddControllersWithViews();
+
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -74,6 +77,11 @@ namespace CleanArchitecture.MVC
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+        }
+
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
         }
     }
 }
