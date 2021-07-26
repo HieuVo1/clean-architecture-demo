@@ -20,7 +20,7 @@ namespace Clean.Architecture.Infastructure.Data.Repository
 
         public IEnumerable<Course> GetCourses()
         {
-            throw new NotImplementedException();
+            return _universityDBContext.Courses;
         }
     }
 }
