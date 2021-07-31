@@ -10,5 +10,6 @@ namespace Clean.Architecture.Domain.Interfaces
     public interface ICourseReponsitory
     {
         IEnumerable<Course> GetCourses();
+        void Add(Course course);
     }
 }
