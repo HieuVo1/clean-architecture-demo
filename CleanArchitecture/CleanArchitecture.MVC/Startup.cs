@@ -1,6 +1,7 @@
 using Clean.Architecture.Infastructure.Data.Context;
 using Clean.Architecture.Infastructure.IoC;
 using CleanArchitecture.MVC.Data;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -44,6 +45,8 @@ namespace CleanArchitecture.MVC
             });
 
             services.AddControllersWithViews();
+
+            services.AddMediatR(typeof(Startup));
 
             RegisterServices(services);
         }

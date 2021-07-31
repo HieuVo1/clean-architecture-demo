@@ -26,6 +26,10 @@ namespace Clean.Architecture.Infastructure.IoC
 
             //Domain Handler
             services.AddScoped<IRequestHandler<CreateCourseCommand, bool>, CourseCommandHandler>();
+
+            //Application Layer 
+            services.AddScoped<ICourseService, CourseService>();
+
             //Infastructure Layer
             services.AddScoped<ICourseReponsitory, CourseRepository>();
             services.AddScoped<UniversityDBContext>();
