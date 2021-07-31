@@ -15,19 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.MVC", "CleanArchitecture.MVC\CleanArchitecture.MVC.csproj", "{CE94363F-D905-4228-8417-A0458920AE86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Domain", "Clean.Architecture.Domain\Clean.Architecture.Domain.csproj", "{81405BB3-B4D1-4699-ABA1-6F2D82F58B8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Domain", "Clean.Architecture.Domain\Clean.Architecture.Domain.csproj", "{81405BB3-B4D1-4699-ABA1-6F2D82F58B8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Infastructure.Data", "Clean.Architecture.Infastructure.Data\Clean.Architecture.Infastructure.Data.csproj", "{E025B333-4C7D-4719-85F9-BEDF3CAE1FA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Infastructure.Data", "Clean.Architecture.Infastructure.Data\Clean.Architecture.Infastructure.Data.csproj", "{E025B333-4C7D-4719-85F9-BEDF3CAE1FA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Application", "Clean.Architecture.Application\Clean.Architecture.Application.csproj", "{9F270299-3551-4B4D-8592-C2E5736E32CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Application", "Clean.Architecture.Application\Clean.Architecture.Application.csproj", "{9F270299-3551-4B4D-8592-C2E5736E32CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Infastructure.IoC", "Clean.Architecture.Infastructure.IoC\Clean.Architecture.Infastructure.IoC.csproj", "{777894CA-DFCF-4772-81F2-900EA30C3B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Infastructure.IoC", "Clean.Architecture.Infastructure.IoC\Clean.Architecture.Infastructure.IoC.csproj", "{777894CA-DFCF-4772-81F2-900EA30C3B0F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infastructure.Bus", "Infastructure.Bus", "{C765D349-FC64-4792-84D7-621CB3D69670}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{46063C12-F92D-48F4-BD2B-54248D9B3FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Infastructure.Bus", "Clean.Architecture.Infastructure.Bus\Clean.Architecture.Infastructure.Bus.csproj", "{3E933E66-66F1-47F3-83D4-580F45C38143}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Infastructure.Bus", "Clean.Architecture.Infastructure.Bus\Clean.Architecture.Infastructure.Bus.csproj", "{3E933E66-66F1-47F3-83D4-580F45C38143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Domain.Core", "Clean.Architecture.Domain.Core\Clean.Architecture.Domain.Core.csproj", "{625CC42D-1D61-4C58-87CB-F6F7ADE69903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{3E933E66-66F1-47F3-83D4-580F45C38143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E933E66-66F1-47F3-83D4-580F45C38143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E933E66-66F1-47F3-83D4-580F45C38143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625CC42D-1D61-4C58-87CB-F6F7ADE69903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625CC42D-1D61-4C58-87CB-F6F7ADE69903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625CC42D-1D61-4C58-87CB-F6F7ADE69903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625CC42D-1D61-4C58-87CB-F6F7ADE69903}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{9F270299-3551-4B4D-8592-C2E5736E32CA} = {37C36407-085A-42FB-8ABB-39B22989D120}
 		{777894CA-DFCF-4772-81F2-900EA30C3B0F} = {02053E12-6DDA-4C59-8081-3A8010CF6F5D}
 		{3E933E66-66F1-47F3-83D4-580F45C38143} = {C765D349-FC64-4792-84D7-621CB3D69670}
+		{625CC42D-1D61-4C58-87CB-F6F7ADE69903} = {DEA12B8C-1041-4A15-AF79-D39E4A69AA8E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC775411-1169-4436-B236-4229BAD692C6}
